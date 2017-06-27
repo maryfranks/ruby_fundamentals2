@@ -1,6 +1,6 @@
 def greet_backwards(name)
   name.reverse!
-  puts "Hello #{name}!  Welcome Home."
+  puts "Hello #{name}#{name}!  Welcome Home."
 end
 
 greet_backwards("Amanda")
