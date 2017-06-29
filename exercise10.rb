@@ -6,6 +6,11 @@ students = {
 
 students[:cohort4] = 43
 
+students.each do |key, value|
+  value = value + (value * 0.05)
+  students[key] = value
+end
+p students
 
 
 # students.each do |key, value|
