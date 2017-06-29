@@ -5,12 +5,13 @@ students = {
 }
 
 students[:cohort4] = 43
+total_students = 0
+students.each do |cohort, students|
 
-students.each do |key, value|
-  value = value + (value * 0.05)
-  students[key] = value
+  total_students = total_students + students
+
 end
-p students
+p total_students
 
 
 # students.each do |key, value|
@@ -18,3 +19,12 @@ p students
 # end
 
 # p students.keys
+
+# students.each do |key, value|
+#   value = value + (value * 0.05)
+#   students[key] = value
+# end
+# p students
+
+# students.delete(:cohort2)
+# p students
